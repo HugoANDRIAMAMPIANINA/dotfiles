@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#
+# Launch a powerprofiles selection menu
+#
+# Requirement: fzf
+#
+# Author:  Jesse Mirabel <sejjymvm@gmail.com>
+# Date:    August 19, 2025
+# License: MIT
+
+main() {
+	local list=(
+		"Power-Saver"
+		"Balanced"
+		"Performance"
+	)
+
+	local options=(
+		"--border=sharp"
+		"--border-label= Power Menu "
+		"--cycle"
+		"--ghost=Search"
+		"--height=~100%"
+		"--highlight-line"
+		"--info=inline-right"
+		"--pointer="
+		"--reverse"
+	)
+
+	local currentMode
+	currentMode=$(powerprofilesctl get)
+
+	echo "$currentMode"
+
+	local selected
+	selected=$(printf "%s\n" "${list[@]}" | fzf "${options[@]}")
+
+	case $selected in
+		Power-Saver)      powerprofilesctl set power-saver ;;
+		Balanced)  powerprofilesctl set balanced ;;
+		Performance)    powerprofilesctl set performance ;;
+		*)         exit 1 ;;
+	esac
+}
+
+main

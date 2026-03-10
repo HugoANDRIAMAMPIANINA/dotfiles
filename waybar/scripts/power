@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+#
+# Launch a power menu
+#
+# Requirement: fzf
+#
+# Author:  Jesse Mirabel <sejjymvm@gmail.com>
+# Date:    August 19, 2025
+# License: MIT
+
+main() {
+	local list=(
+		"Lock"
+		"Shutdown"
+		"Reboot"
+		"Logout"
+	)
+
+	local options=(
+		"--border=sharp"
+		"--border-label= Power Menu "
+		"--cycle"
+		"--ghost=Search"
+		"--height=~100%"
+		"--highlight-line"
+		"--info=inline-right"
+		"--pointer="
+		"--reverse"
+	)
+
+	local selected
+	selected=$(printf "%s\n" "${list[@]}" | fzf "${options[@]}")
+
+	case $selected in
+		Lock)      hyprlock --quiet ;;
+		Shutdown)  systemctl poweroff ;;
+		Reboot)    systemctl reboot ;;
+		Logout)    hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit ;;
+		*)         exit 1 ;;
+	esac
+}
+
+main

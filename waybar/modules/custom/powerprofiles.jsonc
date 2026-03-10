@@ -1,0 +1,33 @@
+{
+	"custom/powerprofiles": {
+		// "exec":
+		// "exec-if":
+		// "exec-on-event":
+		// "hide-empty-text":
+		// "return-type":
+		// "interval":
+		// "restart-interval":
+		// "signal":
+		"format": "󱈏",
+		// "format-icons":
+		// "rotate":
+		// "min-length":
+		// "max-length":
+		// "align":
+		// "justify":
+		"on-click": "ghostty -e ~/.config/waybar/scripts/powerprofiles",
+		// "on-click-middle":
+		// "on-click-right":
+		// "on-update":
+		// "on-scroll-up":
+		// "on-scroll-down":
+		// "smooth-scrolling-threshold":
+		// "tooltip":
+		"tooltip-format": "Power Profiles"
+		// "escape":
+		// "menu":
+		// "menu-file":
+		// "menu-actions":
+		// "expand":
+	}
+}
