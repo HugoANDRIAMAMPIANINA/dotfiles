@@ -1,0 +1,78 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "completions": {
+    "words_min_length": 3,
+  },
+  "icon_theme": "Material Icon Theme",
+  "vim_mode": false,
+  "completion_detail_alignment": "right",
+  "collaboration_panel": {
+    "dock": "right",
+  },
+  "git_panel": {
+    "dock": "right",
+  },
+  "bottom_dock_layout": "contained",
+  "tabs": {
+    "close_position": "right",
+  },
+  "title_bar": {
+    "show_project_items": true,
+    "show_branch_name": true,
+    "show_branch_icon": false,
+  },
+  "scrollbar": {
+    "show": "auto",
+  },
+  "relative_line_numbers": "enabled",
+  "agent": {
+    "button": true,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "outline_panel": {
+    "dock": "left",
+    "button": true,
+  },
+  "project_panel": {
+    "button": true,
+    "entry_spacing": "comfortable",
+    "default_width": 280.0,
+    "dock": "right",
+  },
+  "disable_ai": true,
+  "vim": {
+    "toggle_relative_line_numbers": false,
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Frappé",
+  },
+}
