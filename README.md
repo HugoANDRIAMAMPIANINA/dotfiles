@@ -16,5 +16,17 @@ My dotfiles used for system config
 
 ```bash
 cd dotfiles/
+
+# Give files permission to be executed
+chmod +x init.sh backup.sh
+```
+
+Copy repo config files to local
+```bash
 ./init.sh
+```
+
+Copy local config files to the repo
+```bash
+./backup.sh
 ```

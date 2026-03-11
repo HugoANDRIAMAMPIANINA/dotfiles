@@ -7,6 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "debugger": {
+    "button": true,
+  },
+  "diagnostics": {
+    "button": false,
+  },
+  "terminal": {
+    "button": true,
+  },
+  "status_bar": {
+    "cursor_position_button": true,
+    "active_language_button": true,
+  },
+  "search": {
+    "button": false,
+  },
+  "toolbar": {
+    "quick_actions": false,
+  },
   "lsp": {
     "vtsls": {
       "settings": {
@@ -59,9 +78,13 @@
     "button": true,
   },
   "project_panel": {
+    "auto_reveal_entries": false,
+    "hide_hidden": false,
     "button": true,
     "entry_spacing": "comfortable",
-    "default_width": 280.0,
+    "indent_size": 28,
+    "auto_fold_dirs": false,
+    "default_width": 360,
     "dock": "right",
   },
   "disable_ai": true,
@@ -73,6 +96,6 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Frappé",
+    "dark": "One Dark",
   },
 }

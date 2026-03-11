@@ -21,61 +21,61 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-b": "workspace::ToggleRightDock",
-    },
+      "ctrl-b": "workspace::ToggleRightDock"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-alt-b": "workspace::ToggleLeftDock",
-    },
+      "ctrl-alt-b": "workspace::ToggleLeftDock"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-alt-t": "terminal_panel::Toggle",
-    },
+      "ctrl-alt-t": "terminal_panel::Toggle"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-`": null,
-    },
+      "ctrl-`": null
+    }
   },
   {
     "context": "vim_mode == insert",
     "bindings": {
-      "ctrl-space": "editor::ShowCompletions",
-    },
+      "ctrl-space": "editor::ShowCompletions"
+    }
   },
   {
     "context": "vim_mode == insert",
     "bindings": {
-      "ctrl-x ctrl-o": null,
-    },
+      "ctrl-x ctrl-o": null
+    }
   },
   {
     "context": "vim_mode == literal",
     "bindings": {
-      "ctrl-b": null,
-    },
+      "ctrl-b": null
+    }
   },
   {
     "context": "(VimControl && !menu)",
     "bindings": {
-      "ctrl-b": null,
-    },
+      "ctrl-b": null
+    }
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-shift-c": "editor::Copy",
-    },
+      "ctrl-shift-c": "editor::Copy"
+    }
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-shift-v": "editor::Paste",
-    },
-  },
+      "ctrl-shift-v": "editor::Paste"
+    }
+  }
 ]

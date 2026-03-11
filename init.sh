@@ -1,25 +1,27 @@
 #!/bin/bash
 
+echo "Trying to install yay..."
+
 # Install yay
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+echo "Successfully installed yay !"
+
+echo "Trying to install packages..."
+
 # Install dependencies
 yay -S $(cat installs.txt)
+echo "Successfully installed packages !"
 
-# Copy hyprland config
-cp ./hypr/ .config/
+echo "Trying to copy config files..."
 
-# Copy waybar config
-cp ./waybar/ .config/
+# Copy .bashrc file
+cp .bashrc $HOME/.bashrc
 
-# Copy zed config
-cp ./zed/ .config/
+# Copy .config folder
+cp -r ./.config/ $HOME/
 
-# Copy ghostty config
-cp ./ghostty/ .config/
-
-# Copy rofi config
-cp ./rofi/ .config/
+echo "Config files successfully copied !"
